@@ -1,5 +1,8 @@
 # Dubbo Zookeeper Example
 
+# Requirements
+Java 17, mvn, docker, docker-compose
+
 This example shows how to use [zookeeper](https://zookeeper.apache.org/) as Dubbo's registry center.
 
 ## How To Run
@@ -19,9 +22,14 @@ Execute the following maven command under *dubbo-samples-zookeeper* directory, o
 
 ```bash
 mvn clean package
+mvn clean install
 ```
 
 #### Step 3. Run Examples
+
+```bash
+mvn spring-boot:run
+```
 
 0. Run *ProviderBootstrap* to start service provider
 0. Run *ConsumerBootstrap* to start service consumer, you should see the following result in the console:
