@@ -22,7 +22,6 @@ Execute the following maven command under *dubbo-samples-zookeeper* directory, o
 
 ```bash
 mvn clean package
-mvn clean install
 ```
 
 #### Step 3. Run Examples
